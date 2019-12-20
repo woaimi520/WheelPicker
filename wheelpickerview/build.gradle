@@ -33,4 +33,5 @@ dependencies {
 
     //日历控件
     implementation 'com.haibin:calendarview:3.3.6'
+    compile project(path: ':lib')
 }
