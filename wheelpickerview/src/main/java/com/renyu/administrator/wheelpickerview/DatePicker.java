@@ -3,9 +3,6 @@ package com.renyu.administrator.wheelpickerview;
 import android.content.Context;
 import android.util.AttributeSet;
 import androidx.annotation.Nullable;
-
-import com.renyu.administrator.lib.MyClass;
-
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
@@ -90,7 +87,6 @@ public class DatePicker extends WheelPicker<String> {
      * 设置重复频率
      */
     public void setFrequency() {
-        String a = MyClass.a;
         List<String> data = new ArrayList<>();
         data.add("无");
         data.add("天");
