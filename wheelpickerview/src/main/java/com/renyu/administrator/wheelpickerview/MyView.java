@@ -6,5 +6,5 @@ package com.renyu.administrator.wheelpickerview;
  * 注释：
  */
 public class MyView {
-    public static String a = "ren2";
+    public static String a = "ren3";
 }
