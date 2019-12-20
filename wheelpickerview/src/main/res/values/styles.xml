@@ -8,4 +8,26 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
+    <declare-styleable name="WheelPicker">
+        <attr name="halfVisibleItemCount"/>
+        <attr name="itemTextSize"/>
+        <attr name="itemMaximumWidthText"/>
+        <attr name="itemTextColor"/>
+        <attr name="textGradual"/>
+        <attr name="selectedTextColor"/>
+        <attr name="selectedTextSize"/>
+        <attr name="currentItemPosition"/>
+        <attr name="itemWidthSpace"/>
+        <attr name="itemHeightSpace"/>
+        <attr name="zoomInSelectedItem"/>
+        <attr name="wheelCyclic"/>
+        <attr name="wheelCurtain"/>
+        <attr name="wheelCurtainColor"/>
+        <attr name="wheelCurtainBorder" />
+        <attr name="wheelCurtainBorderColor"/>
+        <attr name="indicatorText"/>
+        <attr name="indicatorTextSize"/>
+        <attr name="indicatorTextColor"/>
+    </declare-styleable>
+
 </resources>
