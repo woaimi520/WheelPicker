@@ -13,12 +13,12 @@ public class SpPxUtils {
      * @param sp
      * @return
      */
-    public static int sp2Px( float sp) {
-        return (int) (sp * MyApplication.getInstances().getResources().getDisplayMetrics().scaledDensity + 0.5f);
+    public static int sp2Px(Context context, float sp) {
+        return (int) (sp * context.getResources().getDisplayMetrics().scaledDensity + 0.5f);
     }
 
-   public static int px2Sp(float px){
-       return (int) (px /MyApplication.getInstances().getResources().getDisplayMetrics().scaledDensity + 0.5f);
+   public static int px2Sp(Context context,float px){
+       return (int) (px /context.getResources().getDisplayMetrics().scaledDensity + 0.5f);
    }
 
     /**

@@ -261,7 +261,7 @@ public class WheelPicker<T> extends View {
             return;
         }
         TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.WheelPicker);
-        mTextSize = a.getDimensionPixelSize(R.styleable.WheelPicker_itemTextSize, SpPxUtils.sp2Px(14));
+        mTextSize = a.getDimensionPixelSize(R.styleable.WheelPicker_itemTextSize, SpPxUtils.sp2Px(context,14));
 
          mTextColor = a.getColor(R.styleable.WheelPicker_itemTextColor, Color.BLACK);
 
@@ -272,10 +272,10 @@ public class WheelPicker<T> extends View {
         mItemMaximumWidthText = a.getString(R.styleable.WheelPicker_itemMaximumWidthText);
         mSelectedItemTextColor = a.getColor(R.styleable.WheelPicker_selectedTextColor, Color.parseColor("#000000"));
 
-        mSelectedItemTextSize = a.getDimensionPixelSize(R.styleable.WheelPicker_selectedTextSize, SpPxUtils.sp2Px(16));
+        mSelectedItemTextSize = a.getDimensionPixelSize(R.styleable.WheelPicker_selectedTextSize, SpPxUtils.sp2Px(context,16));
         mCurrentPosition = a.getInteger(R.styleable.WheelPicker_currentItemPosition, 0);
-        mItemWidthSpace = a.getDimensionPixelSize(R.styleable.WheelPicker_itemWidthSpace, DpPxUtils.dp2Px(32));
-        mItemHeightSpace = a.getDimensionPixelSize(R.styleable.WheelPicker_itemHeightSpace, DpPxUtils.dp2Px(16));
+        mItemWidthSpace = a.getDimensionPixelSize(R.styleable.WheelPicker_itemWidthSpace, DpPxUtils.dp2Px(context,32));
+        mItemHeightSpace = a.getDimensionPixelSize(R.styleable.WheelPicker_itemHeightSpace, DpPxUtils.dp2Px(context,16));
         mIsZoomInSelectedItem = a.getBoolean(R.styleable.WheelPicker_zoomInSelectedItem, true);
         mIsShowCurtain = a.getBoolean(R.styleable.WheelPicker_wheelCurtain, true);
         mCurtainColor = a.getColor(R.styleable.WheelPicker_wheelCurtainColor, Color.parseColor("#303d3d3d"));
@@ -414,7 +414,7 @@ public class WheelPicker<T> extends View {
         }
         if (mIsShowCurtainBorder) {
             mPaint.setStyle(Paint.Style.FILL);
-            mPaint.setStrokeWidth(DpPxUtils.dp2Px(1));
+            mPaint.setStrokeWidth(DpPxUtils.dp2Px(getContext(),1));
             mPaint.setColor(mCurtainBorderColor);
             canvas.drawLine(mSelectedItemRect.left, mSelectedItemRect.top, mSelectedItemRect.right, mSelectedItemRect.top, mPaint);
             canvas.drawLine(mSelectedItemRect.left, mSelectedItemRect.bottom, mSelectedItemRect.right, mSelectedItemRect.bottom, mPaint);

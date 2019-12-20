@@ -10,15 +10,17 @@ public class DpPxUtils {
 
     /**
      * +0.5f 是为了强制转换的时候 四舍五入
+     *
      * @param dp
      * @return
      */
-    public static int dp2Px( float dp) {
-        return (int) (dp * MyApplication.getInstances().getResources().getDisplayMetrics().density + 0.5f);
+    public static int dp2Px(Context context, float dp) {
+
+        return (int) (dp * context.getResources().getDisplayMetrics().density + 0.5f);
     }
 
-   public static int px2Dp(float px){
-       return (int) (px /MyApplication.getInstances().getResources().getDisplayMetrics().density + 0.5f);
+   public static int px2Dp(Context context,float px){
+       return (int) (px /context.getResources().getDisplayMetrics().density + 0.5f);
    }
 
     /**
