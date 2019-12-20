@@ -1,2 +1,2 @@
-include ':app', ':wheelpickerview', ':lib'
+include ':app', ':wheelpickerview'
 rootProject.name='WheelPicker'
